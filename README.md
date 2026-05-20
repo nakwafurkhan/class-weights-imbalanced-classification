@@ -231,23 +231,25 @@ The reasoning:
 
 ## How to reproduce
 
+**Tested on Python 3.9+** (works on 3.10, 3.11, 3.12).
+
 ```bash
 # clone
-git clone https://github.com/<user>/<repo>.git
-cd <repo>
+git clone https://github.com/nakwafurkhan/class-weights-imbalanced-classification.git
+cd class-weights-imbalanced-classification
 
-# install
+# install (pinned versions in requirements.txt — the ones used to produce the committed metrics)
 python3 -m venv .venv && source .venv/bin/activate
-pip install scikit-learn pandas matplotlib seaborn jupyter
+pip install -r requirements.txt
 
-# run the notebook end-to-end
-jupyter nbconvert --execute --to notebook --inplace notebooks/class_weights_analysis.ipynb
-
-# or just run the standalone script
+# run the standalone script — generates everything in assets/
 python3 run_analysis.py
+
+# or re-execute the notebook end-to-end
+jupyter nbconvert --execute --to notebook --inplace notebooks/class_weights_analysis.ipynb
 ```
 
-Outputs land in `assets/`. The notebook is already pre-executed, so you can read it without running anything.
+The notebook is already pre-executed, so you can read it on GitHub without running anything. Re-executing produces identical numbers because every randomised step is pinned with `random_state=42`.
 
 ---
 

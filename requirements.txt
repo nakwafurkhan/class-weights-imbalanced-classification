@@ -1,0 +1,17 @@
+# Pinned dependencies for the class-weights assignment.
+#
+# Tested versions (Python 3.9+). The lower-bound constraints are
+# permissive — any newer compatible release of these libraries should
+# work, but these are the exact versions that produced the metrics
+# reported in README.md and the committed notebook.
+
+scikit-learn>=1.4,<2
+pandas>=2.0,<3
+numpy>=1.24,<3
+matplotlib>=3.7,<4
+seaborn>=0.13,<1
+
+# Only needed if you want to open / re-execute the notebook
+jupyter>=1.0,<2
+notebook>=7.0,<8
+nbconvert>=7.0,<8
