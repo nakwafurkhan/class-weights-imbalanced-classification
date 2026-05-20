@@ -1,0 +1,39 @@
+{
+  "imbalance_ratio": 10.415525114155251,
+  "minority_pct": 8.76,
+  "computed_weights": {
+    "majority": 0.547945205479452,
+    "minority": 5.714285714285714,
+    "ratio": 10.428571428571429
+  },
+  "unweighted": {
+    "accuracy": 0.933,
+    "precision": 0.8888888888888888,
+    "recall": 0.2727272727272727,
+    "f1": 0.41739130434782606,
+    "pr_auc": 0.6261995031307709
+  },
+  "weighted": {
+    "accuracy": 0.907,
+    "precision": 0.4731182795698925,
+    "recall": 0.5,
+    "f1": 0.4861878453038674,
+    "pr_auc": 0.6004482563040661
+  },
+  "best_grid_config": "{'class_weight': {0: 1, 1: 5}}",
+  "best_grid_f1": 0.6344955161715331,
+  "confusion_matrix": {
+    "unweighted": {
+      "TN": 909,
+      "FP": 3,
+      "FN": 64,
+      "TP": 24
+    },
+    "weighted": {
+      "TN": 863,
+      "FP": 49,
+      "FN": 44,
+      "TP": 44
+    }
+  }
+}
